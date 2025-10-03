@@ -1,0 +1,199 @@
+/* Navbar Styles */
+.navbar-container {
+    background-color: transparent;
+    padding: 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, backdrop-filter 0.2s ease;
+}
+
+.navbar-container.scrolled {
+    background-color: rgba(255,255,255,0.98);
+    box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+    backdrop-filter: blur(6px);
+}
+
+.navbar-container.hidden {
+    transform: translateY(-100%);
+    transition: transform 220ms ease-in-out;
+}
+
+.navbar-container {
+    transition: background-color 0.2s ease, box-shadow 0.2s ease, backdrop-filter 0.2s ease, transform 220ms ease-in-out;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.25rem 2rem;
+    position: relative;
+}
+
+/* Logo Styles */
+.logo-container {
+    flex-shrink: 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #000000;
+    text-decoration: none;
+    letter-spacing: -0.05em;
+}
+
+/* Navigation Items */
+.nav-items {
+    display: flex;
+    gap: 2.5rem;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-link {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+    padding: 0.5rem 0;
+}
+
+.nav-link:hover {
+    color: #374151;
+}
+
+/* Action Buttons */
+.nav-actions {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.login-btn {
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: color 0.2s ease;
+    margin-right: 0.75rem;
+}
+
+.login-btn:hover {
+    color: #374151;
+}
+
+.get-started-btn {
+    background-color: transparent;
+    color: #374151;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d1d5db;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.get-started-btn:hover {
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-content {
+        padding: 1rem 1.5rem;
+    }
+    
+    .nav-items {
+        display: none;
+    }
+    
+    .nav-actions {
+        gap: 0.5rem;
+    }
+    
+    .login-btn,
+    .get-started-btn {
+        font-size: 0.875rem;
+        padding: 0.625rem 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-content {
+        padding: 1rem;
+    }
+    
+    .logo {
+        font-size: 1.5rem;
+    }
+    
+    .login-btn {
+        display: none;
+    }
+}
+
+/* Centered hero/banner styles placed under the navbar */
+.nav-hero {
+    background: transparent;
+    padding: 9.5rem 1rem 3rem 1rem;
+}
+
+.nav-hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav-hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0 0 1rem 0;
+    line-height: 1.05;
+}
+
+.nav-hero-sub {
+    color: #6b7280;
+    margin: 0 0 2rem 0;
+    font-size: 1rem;
+}
+
+.nav-hero-ctas {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-cta-primary {
+    background: #0f7b73;
+    color: #fff;
+    border: none;
+    padding: 0.9rem 1.6rem;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+.nav-cta-secondary {
+    background: transparent;
+    color: #111827;
+    border: 1px solid #e6e6e6;
+    padding: 0.9rem 1.6rem;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    .nav-hero-title { font-size: 2rem; }
+    .nav-hero-inner { padding: 0 1rem; }
+}

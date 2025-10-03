@@ -1,0 +1,34 @@
+.site-footer {
+    margin-top: 100px;
+  background: #ffffff;
+  color: #111827;
+  padding: 3rem 1rem 2rem 1rem;
+  border-top: 1px solid #eef2f7;
+}
+
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+
+.footer-top { display: flex; gap: 2rem; }
+.footer-brand { font-size: 2rem; font-weight: 800; padding-right: 2rem; }
+
+.footer-columns { display: flex; gap: 3rem; flex: 1; }
+.footer-col { min-width: 180px; }
+.footer-col h4 { margin: 0 0 0.75rem 0; font-size: 1rem; }
+.footer-col ul { list-style: none; padding: 0; margin: 0; color: #475569; }
+.footer-col li { margin-bottom: 0.75rem; }
+.newsletter { margin-left: auto; }
+.newsletter-input { display: block; width: 100%; padding: 0.75rem; margin-bottom: 0.75rem; border: 1px solid #e6e6e6; border-radius: 6px; }
+.newsletter-btn { background: #0f7b73; color: #fff; padding: 0.75rem 1rem; border-radius: 6px; border: none; cursor: pointer; }
+
+.footer-divider { height: 1px; background: #f3f4f6; margin: 1.5rem 0; }
+
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; color: #6b7280; font-size: 0.95rem; }
+.footer-links { text-align: center; flex: 1; }
+.footer-social { min-width: 120px; text-align: right; }
+
+@media (max-width: 768px) {
+  .footer-top { flex-direction: column; }
+  .footer-columns { flex-direction: column; }
+  .newsletter { margin-left: 0; }
+  .footer-bottom { flex-direction: column; gap: 0.75rem; text-align: center; }
+}
