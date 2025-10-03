@@ -1,0 +1,664 @@
+/* Demo Dashboard Styles */
+.demo-container {
+    width: 100%;
+    margin: 2rem auto;
+    max-width: 1100px;
+    padding: 0 2rem;
+}
+
+.dashboard {
+    display: flex;
+    height: 520px;
+    background: #ffffff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    border-radius: 1rem;
+    overflow: visible;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    border: 1px solid #e5e7eb;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 240px;
+    background: #fafafa;
+    border-right: 1px solid #e5e7eb;
+    padding: 1rem 0;
+    flex-shrink: 0;
+}
+
+.sidebar-header {
+    padding: 0 1.25rem 1.25rem 1.25rem;
+}
+
+.sidebar .logo {
+    font-size: 1.125rem;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 0.75rem;
+    display: block;
+}
+
+.search-bar {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.375rem 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    background: #f8fafc;
+}
+
+.search-shortcut {
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #64748b;
+    font-size: 0.75rem;
+}
+
+.sidebar-nav {
+    padding: 0 1rem;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 1.25rem;
+    color: #6b7280;
+    cursor: pointer;
+    border-radius: 0;
+    margin-bottom: 0.125rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.nav-item.active {
+    background: #e5e7eb;
+    color: #1f2937;
+    font-weight: 600;
+}
+
+.nav-item:hover:not(.active) {
+    background: #f8fafc;
+}
+
+.nav-icon {
+    font-size: 1rem;
+}
+
+.expand-icon {
+    margin-left: auto;
+    font-size: 0.75rem;
+}
+
+.nav-section {
+    margin-top: 2rem;
+}
+
+.section-label {
+    color: #94a3b8;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    background: white;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.user-info span {
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+.top-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profile-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.profile-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-name {
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #1e293b;
+}
+
+.profile-company {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    padding: 1.25rem 1.5rem;
+    overflow: visible;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.assets-section {
+    background: transparent;
+    padding: 0;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+}
+
+.assets-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.assets-header h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #1f2937;
+    margin: 0;
+}
+
+.asset-amount {
+    font-weight: 700;
+    color: #000;
+}
+
+.move-funds-btn {
+    background: #000;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.asset-bar {
+    display: flex;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #f1f5f9;
+}
+
+.asset-segment.business {
+    background: #f59e0b;
+}
+
+.asset-segment.treasury {
+    background: #3b82f6;
+}
+
+/* Dashboard Grid */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr 260px;
+    gap: 1.5rem;
+    flex: 1;
+    align-items: start;
+    overflow: visible;
+}
+
+.accounts-section {
+    background: transparent;
+    padding: 0;
+    overflow: visible;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.section-header h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+}
+
+.new-account-btn {
+    background: none;
+    border: none;
+    color: #64748b;
+    font-size: 0.875rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.account-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.account-item:last-child {
+    border-bottom: none;
+}
+
+.account-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.account-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.account-icon.small {
+    width: 24px;
+    height: 24px;
+    font-size: 0.875rem;
+}
+
+.business-icon {
+    background: #dbeafe;
+}
+
+.treasury-icon {
+    background: #fef3c7;
+}
+
+.account-details h4 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.account-details p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+.account-balance {
+    text-align: right;
+}
+
+.balance-label {
+    display: block;
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-bottom: 0.25rem;
+}
+
+.balance-amount {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* Card Promotion */
+.card-promotion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8fafc;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+.card-content h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.card-content p {
+    margin: 0 0 1rem 0;
+    font-size: 0.875rem;
+    color: #64748b;
+    line-height: 1.4;
+}
+
+.get-started-link {
+    background: none;
+    border: none;
+    color: #1e293b;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.card-logo .arc-logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #64748b;
+}
+
+/* Right Sidebar */
+.right-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 80%;
+    min-height: 330px;
+}
+
+.premium-card {
+    background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+    color: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 200px;
+}
+
+.premium-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.premium-logo {
+    font-weight: 800;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+}
+
+.premium-content {
+    text-align: center;
+}
+
+.manager-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.premium-content h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.375rem;
+    font-weight: 600;
+}
+
+.premium-content p {
+    margin: 0 0 2rem 0;
+    font-size: 1rem;
+    color: #d1d5db;
+}
+
+.contact-btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 1.5rem;
+    border-radius: 0.75rem;
+    margin-top: -15px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.2s ease;
+}
+
+.contact-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.earnings-card,
+.quick-links {
+    background: white;
+    border-radius: 0.75rem;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.earnings-card h4,
+.quick-links h4 {
+    margin: 0 0 1rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.earnings-tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tab {
+    font-size: 0.875rem;
+    color: #64748b;
+    cursor: pointer;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+    color: #1e293b;
+    border-bottom-color: #1e293b;
+}
+
+.earnings-amounts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-earning {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.secondary-earning {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #64748b;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+    color: #64748b;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+.link-item:hover {
+    color: #1e293b;
+}
+
+.link-icon {
+    font-size: 1rem;
+}
+
+/* Transactions Section */
+.transactions-section {
+    background: transparent;
+    padding: 0;
+    margin-top: 1rem;
+    flex-shrink: 0;
+}
+
+.transactions-section h3 {
+    margin: 0 0 1rem 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.transaction-table {
+    width: 100%;
+}
+
+.table-header {
+    display: grid;
+    grid-template-columns: 100px 150px 200px 150px 120px;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.table-row {
+    display: grid;
+    grid-template-columns: 100px 150px 200px 150px 120px;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.875rem;
+    align-items: center;
+}
+
+.account-cell {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.amount.negative {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+/* Simplified Transaction Styles */
+.simple-transaction {
+    overflow: visible;
+}
+
+.transaction-row {
+    display: grid;
+    grid-template-columns: 80px 120px 1fr 120px 100px;
+    gap: 1rem;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 0.875rem;
+    align-items: center;
+}
+
+.tx-date {
+    color: #6b7280;
+}
+
+.tx-account {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.tx-description {
+    color: #1f2937;
+}
+
+.tx-method {
+    color: #6b7280;
+    font-size: 0.8rem;
+}
+
+.tx-amount.negative {
+    color: #ef4444;
+    font-weight: 600;
+    text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .right-sidebar {
+        flex-direction: row;
+        overflow-x: auto;
+    }
+    
+    .right-sidebar > * {
+        flex-shrink: 0;
+        width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    
+    .dashboard-content {
+        padding: 1rem;
+    }
+    
+    .table-header,
+    .table-row {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .top-bar {
+        padding: 1rem;
+    }
+}

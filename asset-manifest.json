@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/evaluate-companies/static/css/main.8ee50191.css",
+    "main.js": "/evaluate-companies/static/js/main.bc578a83.js",
+    "static/js/453.f729f5fa.chunk.js": "/evaluate-companies/static/js/453.f729f5fa.chunk.js",
+    "static/media/tech-illustration.svg": "/evaluate-companies/static/media/tech-illustration.667d9cc4e3ec302253008f1b3f5a0b5a.svg",
+    "index.html": "/evaluate-companies/index.html",
+    "static/media/lock.svg": "/evaluate-companies/static/media/lock.fe3f7b487835fbc34fad9e8b3fc2e95c.svg",
+    "static/media/check.svg": "/evaluate-companies/static/media/check.4abe35bbb6118b0e841bb57c02e0b384.svg",
+    "static/media/chat.svg": "/evaluate-companies/static/media/chat.6a5d244ef124f5d96d9db8110df10414.svg",
+    "main.8ee50191.css.map": "/evaluate-companies/static/css/main.8ee50191.css.map",
+    "main.bc578a83.js.map": "/evaluate-companies/static/js/main.bc578a83.js.map",
+    "453.f729f5fa.chunk.js.map": "/evaluate-companies/static/js/453.f729f5fa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ee50191.css",
+    "static/js/main.bc578a83.js"
+  ]
+}
